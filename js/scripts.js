@@ -100,3 +100,10 @@ function displayTurns(playerName) {
     $("h1#whose_turn ").text("its " + playerName + "'s turn");
 
 }
+
+function newGame() {
+    current = 0;
+    $("h1#whose_turn ").text("");
+    $("#roll").hide();
+    $("#hold").hide();
+}

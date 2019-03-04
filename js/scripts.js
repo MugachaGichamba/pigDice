@@ -80,3 +80,7 @@ function change_player(currentScore) {
     }
 
 }
+
+function hold() {
+    change_player(current);
+}

@@ -54,4 +54,29 @@ function change_player(currentScore) {
     player1.turn = !player1.turn;
     player2.turn = !player2.turn;
 
+    if (player1.turn) {
+
+        player2.total += currentScore;
+        $("h2#player2 ").text(player2.total);
+        console.log(player2.total)
+        if (player2.total >= 10) {
+            displayWinner(player2.name);
+
+        } else {
+            displayTurns(player1.name);
+
+        }
+
+    } else {
+        player1.total += currentScore;
+        $("h2#player1 ").text(player1.total);
+        if (player1.total >= 10) {
+            displayWinner(player1.name);
+        } else {
+            displayTurns(player2.name);
+
+        }
+
+    }
+
 }

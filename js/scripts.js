@@ -88,8 +88,15 @@ function hold() {
 function displayWinner(playerName) {
     $("h2#current_heading ").text("");
     $("h2#Current ").text("");
-    // // $("#roll").hide();
-    // // $("#hold").hide();
-    // $("h1#whose_turn ").text(playerName + " has won!!!!");
+    $("#roll").hide();
+    $("#hold").hide();
+    $("h1#whose_turn ").text(playerName + " has won!!!!");
+
+}
+
+function displayTurns(playerName) {
+    current = 0;
+    $("h2#Current ").text(current);
+    $("h1#whose_turn ").text("its " + playerName + "'s turn");
 
 }

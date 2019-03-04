@@ -84,3 +84,12 @@ function change_player(currentScore) {
 function hold() {
     change_player(current);
 }
+
+function displayWinner(playerName) {
+    $("h2#current_heading ").text("");
+    $("h2#Current ").text("");
+    // // $("#roll").hide();
+    // // $("#hold").hide();
+    // $("h1#whose_turn ").text(playerName + " has won!!!!");
+
+}

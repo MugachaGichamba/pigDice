@@ -48,3 +48,10 @@ function rollDice() {
     }
 
 }
+
+function change_player(currentScore) {
+
+    player1.turn = !player1.turn;
+    player2.turn = !player2.turn;
+
+}

@@ -25,3 +25,26 @@ $(document).ready(function() {
 });
 
 var current = 0;
+
+function rollDice() {
+
+
+    rolledValue = Math.floor(Math.random() * (7 - 1) + 1);
+    console.log(rolledValue);
+    if (rolledValue === 1) {
+        $('h3#rolled').text("you rolled " + rolledValue.toString()).fadeIn('fast', function() {
+            $('h3#rolled').delay(500).fadeOut();
+        });
+        current = 0;
+        $("h2#Current ").text(current);
+        change_player(current);
+    } else {
+        current += rolledValue;
+        $('h3#rolled').text("you rolled " + rolledValue.toString()).fadeIn('fast', function() {
+            $('h3#rolled').delay(500).fadeOut();
+        });
+        $("h2#Current ").text(current);
+
+    }
+
+}

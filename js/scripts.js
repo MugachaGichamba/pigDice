@@ -20,6 +20,7 @@ $(document).ready(function() {
         $("h1#whose_turn ").text("its " + player1.name + "'s turn");
         $("button#roll").click(rollDice);
         $("button#hold").click(hold);
+        $("button#newgame").click(newGame);
 
     })
 });
@@ -103,7 +104,9 @@ function displayTurns(playerName) {
 
 function newGame() {
     current = 0;
-    $("h1#whose_turn ").text("");
-    $("#roll").hide();
-    $("#hold").hide();
+    $("h2#player1 ").text(0);
+    $("h2#player2 ").text(0);
+    $("h1#whose_turn ").text("its " + player1.name + "'s turn");
+    $("#roll").show();
+    $("#hold").show();
 }

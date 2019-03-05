@@ -4,6 +4,7 @@
     text-align: center;
     margin-top: 15%;
     color: teal;
+    size: 40%;
 }
 
 div#column_1.col-md-4 {
@@ -44,10 +45,37 @@ div#column_3.col-md-4 {
     width: 50%;
 }
 
+button {
+    background-color: teal;
+    color: white;
+    border-radius: 10%;
+    size: inherit;
+    width: 40%;
+    margin-right: 10%;
+    margin-top: 4%;
+}
+
 body {
     background-image: url("../images/die2.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#rolled {
+    text-align: center;
+    color: red;
+}
+
+#Current {
+    color: red;
+}
+
+h2#player1 {
+    color: black;
+}
+
+h2#player2 {
+    color: black;
 }

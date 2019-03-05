@@ -1,0 +1,16 @@
+.col-md-4 {
+    display: none;
+    border: 2px solid maroon;
+}
+
+.rolling {
+    padding-top: 2px;
+}
+
+#main_title {
+    color: teal;
+    padding: 2px;
+    /* font-family: sans-serif; */
+    text-align: center;
+    text-decoration-line: underline;
+}

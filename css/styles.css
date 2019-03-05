@@ -1,6 +1,19 @@
 .col-md-4 {
     display: none;
-    border: 2px solid maroon;
+    padding: 20px;
+    text-align: center;
+    margin-top: 15%;
+    color: teal;
+}
+
+div#column_1.col-md-4 {
+    border-right: 2px solid teal;
+    padding-top: 7%;
+}
+
+div#column_3.col-md-4 {
+    border-left: 2px solid teal;
+    padding-top: 7%;
 }
 
 .rolling {
@@ -29,4 +42,12 @@
     color: white;
     size: inherit;
     width: 50%;
+}
+
+body {
+    background-image: url("../images/die2.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }

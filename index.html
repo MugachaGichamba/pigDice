@@ -14,18 +14,18 @@
     <div class="container">
 
         <div id="player_names">
-            <h1>Enter Player Names</h1>
+            <h1 id="main_title">Enter Player Names</h1>
             <form id="new-players">
                 <div class="form-group">
-                    <label for="new-player1-name">Player 1 Name: </label>
+                    <label for="new-player1-name">PLAYER 1 NAME: </label>
                     <input type="text" class="form-control" id="new-player1-name">
                 </div>
                 <div class="form-group">
-                    <label for="new-player2-name">Player 2 Name: </label>
+                    <label for="new-player2-name">PLAYER 2 NAME: </label>
                     <input type="text" class="form-control" id="new-player2-name">
                 </div>
 
-                <button type="submit" class="btn">Start Game</button>
+                <button type="submit" class="btn ">Start Game</button>
             </form>
         </div>
         <div class="play">
@@ -39,8 +39,11 @@
                 </div>
                 <div class="col-md-4" id="column_2">
                     <div>
-                        <button>New Game</button>
-                        <h3 id="rolled"></h3>
+                        <button id="newgame">New Game</button>
+                        <div id="rolling">
+                            <h3 id="rolled"></h3>
+                        </div>
+
                         <h1 id="whose_turn"></h1>
 
                         <h2 id="current_heading">Current Score</h2>

@@ -60,7 +60,7 @@ function change_player(currentScore) {
         player2.total += currentScore;
         $("h2#player2 ").text(player2.total);
         console.log(player2.total)
-        if (player2.total >= 10) {
+        if (player2.total >= 100) {
             displayWinner(player2.name);
 
         } else {
@@ -71,7 +71,7 @@ function change_player(currentScore) {
     } else {
         player1.total += currentScore;
         $("h2#player1 ").text(player1.total);
-        if (player1.total >= 10) {
+        if (player1.total >= 100) {
             displayWinner(player1.name);
         } else {
             displayTurns(player2.name);
@@ -93,6 +93,7 @@ function displayWinner(playerName) {
     $("#hold").hide();
     $("h1#whose_turn ").text(playerName + " has won!!!!");
 
+
 }
 
 function displayTurns(playerName) {
@@ -106,6 +107,7 @@ function newGame() {
     current = 0;
     $("h2#player1 ").text(0);
     $("h2#player2 ").text(0);
+    $("h2#current_heading ").text("Current Score");
     $("h1#whose_turn ").text("its " + player1.name + "'s turn");
     $("#roll").show();
     $("#hold").show();

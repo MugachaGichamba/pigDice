@@ -13,6 +13,7 @@
     /* font-family: sans-serif; */
     text-align: center;
     text-decoration-line: underline;
+    margin-top: 25%;
 }
 
 #player_names {
@@ -21,4 +22,11 @@
     text-align: center;
     color: teal;
     size: 50px;
+}
+
+.btn {
+    background-color: teal;
+    color: white;
+    size: inherit;
+    width: 50%;
 }

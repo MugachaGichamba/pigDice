@@ -102,6 +102,8 @@ function displayTurns(playerName) {
 
 function newGame() {
     current = 0;
+    player1.total = 0;
+    player2.total = 0;
     $("h2#player1 ").text(0);
     $("h2#player2 ").text(0);
     $("h2#current_heading ").text("Current Score");
